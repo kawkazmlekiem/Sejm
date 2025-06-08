@@ -20,16 +20,16 @@ Cały projekt został stworzony jako osobny motyw Sejm, wystarczy go pobrać i d
 Ważne! Konieczne jest zainstalowanie pluginu ACF
 
 ## Funkcje
-Na początku w funkcji _register_mp_cpt()_ rejestruję Custom Post Type dla posłów
+Na początku w funkcji _register_mp_cpt()_ rejestruję Custom Post Type dla posłów<br>
 ![image](https://github.com/user-attachments/assets/549d804f-1e7e-412d-a99d-a962181bd1e4)
 <br>
-W _import_mp()_ wykonuję request do API i tworzę stronę posła. Sprawdzam też czy dane w polach ACF się zmieniły i jeżeli tak, to je aktualizuję. Dodaję też _post_meta_ z id posła. Póżniej dzięki niemu pobieram zdjęcie.
+W _import_mp()_ wykonuję request do API i tworzę stronę posła. Sprawdzam też czy dane w polach ACF się zmieniły i jeżeli tak, to je aktualizuję. Dodaję też _post_meta_ z id posła. Póżniej dzięki niemu pobieram zdjęcie.<br>
 ![image](https://github.com/user-attachments/assets/6d41dbd3-0a02-4283-b4d1-beab10a599d4)
 <br>
-Funkcja _ensure_mp_image_loaded_ wykonuje się po wejściu na podstrone posła. Na początku sprawdzam, czy dane zdjęcie jest już pobrane. Jeżeli nie, to pobieram je do Media i ustawiam jako thumbnail. Później dzięki temu wyświetlam je na podstronie.
+Funkcja _ensure_mp_image_loaded_ wykonuje się po wejściu na podstrone posła. Na początku sprawdzam, czy dane zdjęcie jest już pobrane. Jeżeli nie, to pobieram je do Media i ustawiam jako thumbnail. Później dzięki temu wyświetlam je na podstronie.<br>
 ![image](https://github.com/user-attachments/assets/49915258-2bc1-49ea-869b-f52f131099b6)
 <br>
-W  _votings_stats_ pobieram dodatkowe informację o pośle, zapisuję je w post_meta, później wykorzystuję je do wyświetlania na stronie.
+W  _votings_stats_ pobieram dodatkowe informację o pośle, zapisuję je w post_meta, później wykorzystuję je do wyświetlania na stronie.<br>
 ![image](https://github.com/user-attachments/assets/5657d430-508b-4662-b5db-661baefa47c6)
 
 ## Problemy
