@@ -1,5 +1,5 @@
 # Sejm
-* [Założenia projektu])(#założenia-projektu)
+* [Założenia projektu](#założenia-projektu)
 * [Technologie](#technologie)
 * [Setup](#setup)
 * [Problemy](#problemy)
